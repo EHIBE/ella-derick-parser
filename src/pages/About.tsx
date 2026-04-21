@@ -46,28 +46,28 @@ const objectives = [
 
 export default function About() {
   return (
-    <div className="mx-auto w-full max-w-[1600px] px-6 pb-24 pt-10 md:px-10 md:pt-14">
-      <section className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04] p-7 shadow-[0_0_60px_rgba(15,23,42,0.4)] backdrop-blur-xl md:p-10">
+    <div className="mx-auto w-full max-w-[1600px] px-4 pb-16 pt-6 sm:px-6 sm:pb-20 sm:pt-8 md:px-10 md:pb-24 md:pt-14">
+      <section className="relative overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-5 shadow-[0_0_60px_rgba(15,23,42,0.4)] backdrop-blur-xl sm:rounded-[28px] sm:p-7 md:rounded-[32px] md:p-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(99,102,241,0.16),transparent_28%),radial-gradient(circle_at_85%_10%,rgba(244,63,94,0.10),transparent_22%)]" />
 
         <div className="relative">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-indigo-200">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-indigo-200 sm:text-xs sm:tracking-[0.22em]">
             <BadgeInfo size={14} className="text-rose-300" />
             Project Specifications
           </div>
 
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="grid gap-8 md:gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
-              <h1 className="text-4xl font-black tracking-tight text-white md:text-5xl">
+              <h1 className="text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl">
                 A cleaner technical presentation of the compiler simulation project
               </h1>
 
-              <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300">
+              <p className="mt-6 max-w-3xl text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
                 This system is a front-end simulation of lexical and syntax analysis for selected program fragments. It focuses on structured token generation, grammar validation, and readable diagnostics across C++, PHP, and Python.
               </p>
 
-              <div className="mt-8 rounded-[28px] border border-white/10 bg-black/20 p-6">
-                <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-200">
+              <div className="mt-8 rounded-[24px] border border-white/10 bg-black/20 p-5 sm:rounded-[28px] sm:p-6">
+                <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-slate-200 sm:tracking-[0.2em]">
                   <Sparkles size={16} className="text-indigo-300" />
                   Core objectives
                 </div>
@@ -83,8 +83,8 @@ export default function About() {
               </div>
             </div>
 
-            <div className="rounded-[28px] border border-white/10 bg-[#071121] p-6">
-              <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-200">
+            <div className="rounded-[24px] border border-white/10 bg-[#071121] p-5 sm:rounded-[28px] sm:p-6">
+              <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-slate-200 sm:tracking-[0.2em]">
                 <Orbit size={16} className="text-cyan-300" />
                 Scope of the system
               </div>
@@ -99,12 +99,12 @@ export default function About() {
                 ].map((item, index) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-slate-300"
+                    className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-slate-300"
                   >
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500/10 font-bold text-indigo-200">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-500/10 font-bold text-indigo-200">
                       {index + 1}
                     </div>
-                    <span>{item}</span>
+                    <span className="leading-6">{item}</span>
                   </div>
                 ))}
               </div>
@@ -113,9 +113,9 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-14 sm:mt-16">
         <div className="mb-8">
-          <h2 className="text-3xl font-black tracking-tight text-white md:text-4xl">
+          <h2 className="text-2xl font-black tracking-tight text-white sm:text-3xl md:text-4xl">
             System capabilities
           </h2>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-400">
@@ -146,10 +146,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mt-16 overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-br from-[#07101f] to-[#030712]">
-        <div className="grid gap-8 p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
+      <section className="mt-14 overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-br from-[#07101f] to-[#030712] sm:mt-16 sm:rounded-[32px]">
+        <div className="grid gap-8 p-6 sm:p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
           <div>
-            <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-indigo-200">
+            <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-indigo-200 sm:tracking-[0.2em]">
               <Code2 size={18} className="text-rose-300" />
               Development team
             </div>
@@ -159,13 +159,13 @@ export default function About() {
           </div>
 
           <div className="rounded-[24px] border border-white/10 bg-white/[0.04] p-6">
-            <div className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-white">
+            <div className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-white sm:tracking-[0.2em]">
               <Users size={18} className="text-indigo-300" />
               Team
             </div>
             <div className="space-y-2 text-sm leading-7 text-slate-300">
-              <p className="text-lg font-bold text-white">Derick Xerxes A. Maquilang</p>
-              <p>Ella Bianca A. Ruyeras</p>
+              <p className="break-words text-lg font-bold text-white">Derick Xerxes A. Maquilang</p>
+              <p className="break-words text-lg font-bold text-white">Ella Bianca A. Ruyeras</p>
               <p className="text-indigo-300">CS-EPC 323 • Machine Project</p>
             </div>
           </div>
