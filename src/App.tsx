@@ -18,7 +18,7 @@ export default function App() {
           <ScrollToTop />
           <Navbar />
 
-          <main className="flex-1 w-full">
+          <main className="w-full flex-1 pt-[73px] sm:pt-[77px]">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
