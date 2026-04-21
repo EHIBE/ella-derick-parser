@@ -38,15 +38,15 @@ function nextNonIgnorableIndex(tokens: Token[], index: number): number {
   return -1;
 }
 
-function previousNonIgnorableIndex(tokens: Token[], index: number): number {
-  for (let i = index - 1; i >= 0; i--) {
-    if (!isIgnorable(tokens[i])) {
-      return i;
-    }
-  }
+// function previousNonIgnorableIndex(tokens: Token[], index: number): number {
+//   for (let i = index - 1; i >= 0; i--) {
+//     if (!isIgnorable(tokens[i])) {
+//       return i;
+//     }
+//   }
 
-  return -1;
-}
+//   return -1;
+// }
 
 function collectLineTokens(tokens: Token[]): Map<number, Token[]> {
   const map = new Map<number, Token[]>();

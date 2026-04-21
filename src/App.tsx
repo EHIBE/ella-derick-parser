@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -6,7 +6,7 @@ import Environment from './pages/Environment';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen w-full bg-[#050816] text-slate-100 font-sans overflow-hidden">
         <div className="fixed inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.14),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(244,63,94,0.10),transparent_22%),radial-gradient(circle_at_50%_100%,rgba(14,165,233,0.08),transparent_26%)]" />
@@ -24,6 +24,6 @@ export default function App() {
           </main>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
