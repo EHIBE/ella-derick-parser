@@ -1,5 +1,6 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Environment from './pages/Environment';
@@ -14,6 +15,7 @@ export default function App() {
         </div>
 
         <div className="relative z-10 flex min-h-screen w-full flex-col">
+          <ScrollToTop />
           <Navbar />
 
           <main className="flex-1 w-full">
