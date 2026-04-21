@@ -95,7 +95,8 @@ export default function About() {
                   'Three core algorithm fragments',
                   'Token stream visualization',
                   'Categorized diagnostic output',
-                  'Interactive fragment switching and editing'
+                  'Interactive fragment switching and editing',
+                  'Syntax and semantic rule validation'
                 ].map((item, index) => (
                   <div
                     key={item}
